@@ -47,6 +47,7 @@
 	</style>
 </head>
 <body>
+	<input type="button" id=but value="Button" name="B3" onclick="test">
 	<div id="line"><img src="line.svg"></div>
 	<header>
 		<div id="logo">
@@ -102,5 +103,27 @@
 			var distance = destination - document.body.scrollTop;
 			scrollByAnimated(distance, 250);
 		}
+		
 	</script>
+		
 </body>
+<script language=VBScript>
+Function Test
+document.all.but.style.cursor="wait"
+document.body.style.cursor="wait"
+
+SetTimeOut "DoIt",1
+
+End Function
+
+Function DoIt
+
+For i = 0 to 3000000
+Next
+
+document.all.but.style.cursor="default"
+document.body.style.cursor="default"
+
+End Function
+
+</script>
